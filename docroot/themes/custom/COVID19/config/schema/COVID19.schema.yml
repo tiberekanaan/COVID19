@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the THEMETITLE theme.
+
+COVID19.settings:
+  type: theme_settings
+  label: 'COVID19 settings'

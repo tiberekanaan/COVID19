@@ -1,0 +1,113 @@
+name: 'COVID19'
+description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
+core: 8.x
+type: theme
+base theme: vartheme
+package: 'Varbase'
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  hero_slider: 'Media Hero Slider'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+# Bootstrap styles and scripts libraries.
+  - COVID19/bootstrap-styles
+  - COVID19/bootstrap-scripts
+  
+# COVID19 custom Vartheme styles and scripts libraries.
+  - COVID19/vartheme-styles
+
+# COVID19 global styles and scripts libraries.
+  - COVID19/global-styles
+  - COVID19/global-scripts
+  
+# COVID19 Varbase Bootstrap Paragraphs colors theme.
+  - COVID19/vbp-colors
+  
+# COVID19 Better Login theme.
+#  - COVID19/betterlogin
+
+# COVID19 Varbase hero slider media general styling.
+#  - COVID19/varbase-heroslider-media
+
+# OPTIONALLY: You can choose to remove Vartheme base theme stylesheets and/or
+# Javascript files.
+libraries-override:
+# Comment lines to keep using libraries from vartheme.
+  bootstrap_library/bootstrap-cdn: false
+  bootstrap_library/bootstrap: false
+  bootstrap_library/bootstrap-dev: false
+  vartheme/bootstrap-styles: false
+  vartheme/bootstrap-scripts: false
+  vartheme/global-styles: false
+#  vartheme/global-scripts: false
+
+# Comment lines to use (RTL) libraries from vartheme.
+  vartheme/bootstrap-styles-rtl: false
+  vartheme/global-styles-rtl: false
+# Comment lines to use (RTL) libraries from COVID19.
+  COVID19/bootstrap-styles-rtl: false
+  COVID19/vartheme-styles-rtl: false
+  COVID19/global-styles-rtl: false
+
+# COVID19 Varbase Bootstrap Paragraphs colors theme.
+  varbase_bootstrap_paragraphs/vbp-colors: COVID19/vbp-colors
+  vartheme/vbp-colors: COVID19/vbp-colors
+#  vartheme/betterlogin: COVID19/betterlogin
+#  varbase_heroslider_media/general-styling: COVID19/varbase-heroslider-media
+  
+# Uncomment lines to replace, exclude css and js files from vartheme.
+# You will need to copy less/css files from Vartheme to use theme for the
+# overriden library.
+# ------------------------------------------------------------------------------
+#  vartheme/bs-callouts: COVID19/bs-callouts
+#  vartheme/card: COVID19/card
+#  vartheme/outside-in: COVID19/outside-in
+#  vartheme/edge2edge: COVID19/edge2edge
+#  vartheme/equal-height: COVID19/equal-height
+#  vartheme/spacing: COVID19/spacing
+#  vartheme/navbar-admin: COVID19/navbar-admin
+# ------------------------------------------------------------------------------
+#  vartheme/ajax: COVID19/ajax
+#  vartheme/alert: COVID19/alert
+#  vartheme/field: COVID19/field
+#  vartheme/file: COVID19/file
+#  vartheme/filter: COVID19/filter
+#  vartheme/form: COVID19/form
+#  vartheme/icon: COVID19/icon
+#  vartheme/navbar: COVID19/navbar
+#  vartheme/node: COVID19/node
+#  vartheme/panel: COVID19/panel
+#  vartheme/progress-bar: COVID19/progress-bar
+#  vartheme/table-drag: COVID19/table-drag
+#  vartheme/tabs: COVID19/tabs
+#  vartheme/toolbar: COVID19/toolbar
+#  vartheme/autocomplete: COVID19/autocomplete
+
+#  Uncomment the following if you want to keep bootstrap/framework
+#    and you want to extend it.
+#libraries-extend:
+#  bootstrap/framework:
+#    - vartheme/framework
+#    - COVID19/framework
+
+ckeditor_stylesheets:
+  - css/base/bootstrap.base.css
+  - css/base/vartheme.base.css
+  - css/base/COVID19.base.css
+  - css/theme/content.theme.css
+  - css/component/alert.component.css
+  - css/component/icon.component.css
+  - css/component/node.component.css
+  - css/component/bs-callouts.component.css
+  - css/layout/edge2edge.layout.css
+  - css/layout/spacing.layout.css

@@ -1,0 +1,19 @@
+.navbar {
+  margin-bottom: 0px !important;
+  border-radius: 0px !important;
+  background-color: #343a40 !important;
+}
+div#navbarHeader {
+  background-color: #343a40;
+}
+div#navbarHeader .text-white {
+  color: #fff !important;
+}
+body {
+  margin-top: 0px !important;
+}
+.announcement {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #f9f9df;
+}
