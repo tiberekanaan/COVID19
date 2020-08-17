@@ -40,7 +40,9 @@
     "vardot/varbase": "~8.8.0",
     "vardot/varbase-updater": "~1.0",
     "symfony/polyfill-php80": "^1.18",
-    "drush/drush": "8.*"
+    "drush/drush": "8.*",
+    "drupal/fontawesome": "^2.17",
+    "drupal/slick_media": "^1.1"
   },
   "replace": {
     "ajaxorg/ace-builds": "*"

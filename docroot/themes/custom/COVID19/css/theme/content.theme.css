@@ -75,3 +75,39 @@ div#heading-vbp-accordion-20-4 {
   content: "\f077";
   /* fa-chevron-up */
 }
+div#heading30 {
+  background-color: #ff0000b0;
+}
+div#heading30 a {
+  color: white !important;
+}
+div#heading31 {
+  background-color: #ffa500b8;
+}
+div#heading31 a {
+  color: white !important;
+}
+div#heading32 {
+  background-color: #b5f352;
+}
+div#heading32 a {
+  color: white !important;
+}
+div#heading33 {
+  background-color: #e9e904ba;
+}
+div#heading33 a {
+  color: white !important;
+}
+div#heading34 {
+  background-color: #69fa69bf;
+}
+div#heading34 a {
+  color: white !important;
+}
+h4.text-uppercase.white-text.mb-0.py-3.mt-1 {
+  display: inline-block;
+}
+.messages__wrapper {
+  padding-top: 30px;
+}
