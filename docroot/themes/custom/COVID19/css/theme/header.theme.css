@@ -15,7 +15,8 @@ body {
 .announcement {
   padding-top: 4px;
   padding-bottom: 4px;
-  background-color: #f9f9df;
+  background-color: #8ecfff;
+  text-transform: uppercase;
 }
 button .navbar-toggler collapsed {
   /* Font & Text */
