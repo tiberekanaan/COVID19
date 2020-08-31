@@ -1,0 +1,113 @@
+name: 'COVID-19 Custom Subtheme'
+description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
+core: 8.x
+type: theme
+base theme: vartheme
+package: 'Varbase'
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  hero_slider: 'Media Hero Slider'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+# Bootstrap styles and scripts libraries.
+  - covid/bootstrap-styles
+  - covid/bootstrap-scripts
+  
+# covid custom Vartheme styles and scripts libraries.
+  - covid/vartheme-styles
+
+# covid global styles and scripts libraries.
+  - covid/global-styles
+  - covid/global-scripts
+  
+# covid Varbase Bootstrap Paragraphs colors theme.
+  - covid/vbp-colors
+  
+# covid Better Login theme.
+#  - covid/betterlogin
+
+# covid Varbase hero slider media general styling.
+#  - covid/varbase-heroslider-media
+
+# OPTIONALLY: You can choose to remove Vartheme base theme stylesheets and/or
+# Javascript files.
+libraries-override:
+# Comment lines to keep using libraries from vartheme.
+  bootstrap_library/bootstrap-cdn: false
+  bootstrap_library/bootstrap: false
+  bootstrap_library/bootstrap-dev: false
+  vartheme/bootstrap-styles: false
+  vartheme/bootstrap-scripts: false
+  vartheme/global-styles: false
+#  vartheme/global-scripts: false
+
+# Comment lines to use (RTL) libraries from vartheme.
+  vartheme/bootstrap-styles-rtl: false
+  vartheme/global-styles-rtl: false
+# Comment lines to use (RTL) libraries from covid.
+  covid/bootstrap-styles-rtl: false
+  covid/vartheme-styles-rtl: false
+  covid/global-styles-rtl: false
+
+# covid Varbase Bootstrap Paragraphs colors theme.
+  varbase_bootstrap_paragraphs/vbp-colors: covid/vbp-colors
+  vartheme/vbp-colors: covid/vbp-colors
+#  vartheme/betterlogin: covid/betterlogin
+#  varbase_heroslider_media/general-styling: covid/varbase-heroslider-media
+  
+# Uncomment lines to replace, exclude css and js files from vartheme.
+# You will need to copy less/css files from Vartheme to use theme for the
+# overriden library.
+# ------------------------------------------------------------------------------
+#  vartheme/bs-callouts: covid/bs-callouts
+#  vartheme/card: covid/card
+#  vartheme/outside-in: covid/outside-in
+#  vartheme/edge2edge: covid/edge2edge
+#  vartheme/equal-height: covid/equal-height
+#  vartheme/spacing: covid/spacing
+#  vartheme/navbar-admin: covid/navbar-admin
+# ------------------------------------------------------------------------------
+#  vartheme/ajax: covid/ajax
+#  vartheme/alert: covid/alert
+#  vartheme/field: covid/field
+#  vartheme/file: covid/file
+#  vartheme/filter: covid/filter
+#  vartheme/form: covid/form
+#  vartheme/icon: covid/icon
+#  vartheme/navbar: covid/navbar
+#  vartheme/node: covid/node
+#  vartheme/panel: covid/panel
+#  vartheme/progress-bar: covid/progress-bar
+#  vartheme/table-drag: covid/table-drag
+#  vartheme/tabs: covid/tabs
+#  vartheme/toolbar: covid/toolbar
+#  vartheme/autocomplete: covid/autocomplete
+
+#  Uncomment the following if you want to keep bootstrap/framework
+#    and you want to extend it.
+#libraries-extend:
+#  bootstrap/framework:
+#    - vartheme/framework
+#    - covid/framework
+
+ckeditor_stylesheets:
+  - css/base/bootstrap.base.css
+  - css/base/vartheme.base.css
+  - css/base/covid.base.css
+  - css/theme/content.theme.css
+  - css/component/alert.component.css
+  - css/component/icon.component.css
+  - css/component/node.component.css
+  - css/component/bs-callouts.component.css
+  - css/layout/edge2edge.layout.css
+  - css/layout/spacing.layout.css

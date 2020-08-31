@@ -1,0 +1,85 @@
+// VARTHEME_SUBTHEME footer styling.
+// -----------------------------------------------------------------------------
+@import "../../bootstrap/less/variables.less";  // Bootstrap variables.
+@import "../../bootstrap/less/mixins.less";     // Bootstrap mixins.
+@import "../variables.less";                    // VARTHEME_SUBTHEME variables.
+@import "../mixins.less";                       // VARTHEME_SUBTHEME mixins.
+// -----------------------------------------------------------------------------
+
+// Insert your VARTHEME_SUBTHEME footer custom LESS styling.
+
+.footer-wrapper {
+  // background-color: @footer-wrapper-bg;
+  background-color: #000 !important;
+  color: #f4f4f4 !important;
+
+  h3 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 15px !important;
+  }
+
+  span.fontawesome-icon-inline {
+    color: white;
+    font-size: 25px;
+}
+
+a.footer-link {
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+a.footer-link:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.footer_heading_wrapper {
+  padding-bottom: 25px !important;
+}
+
+ul.social.footer-linked-list {
+  padding-left: 0px !important;
+}
+
+ul.footer-linked-list {
+  list-style-type: none !important;
+  padding-left: 0px !important;
+}
+
+li.foot-li, li.footer-p {
+  padding-bottom: 15px;
+}
+
+span.fontawesome-icon-inline:hover {
+  color: yellow;
+}
+
+  .footer {
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 45px;
+
+    section[id$="-copyright"] {
+      float: left;
+      padding: 17px 0 17px 0;
+      font-size: 12px;
+
+      > div {
+        padding: 14px 0 10px 0;
+        }
+      }
+
+    ul.nav {
+      float: right;
+      padding: 17px 0 17px 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        text-decoration: none !important;
+      }
+    }
+  }
+}

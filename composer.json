@@ -43,7 +43,8 @@
     "drush/drush": "8.*",
     "drupal/fontawesome": "^2.17",
     "drupal/slick_media": "^1.1",
-    "drupal/entity_print": "^2.2"
+    "drupal/entity_print": "^2.2",
+    "drupal/fontyourface": "^3.3"
   },
   "replace": {
     "ajaxorg/ace-builds": "*"
