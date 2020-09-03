@@ -124,3 +124,17 @@ ol.breadcrumb {
 .main-container.container.js-quickedit-main-content {
   margin-top: 20px;
 }
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none !important;
+}
+div#vbp-carousel-30 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.carousel-indicators {
+  bottom: -20px !important;
+}
+.carousel-indicators .active {
+  background-color: #2c3e50 !important;
+}

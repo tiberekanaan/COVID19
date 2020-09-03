@@ -15,6 +15,9 @@ div#navbarHeader .text-white {
 body {
   margin-top: 0px !important;
 }
+#navbar-collapse {
+  margin-top: 10px;
+}
 .announcement {
   padding-top: 4px;
   padding-bottom: 4px;
